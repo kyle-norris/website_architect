@@ -478,7 +478,8 @@ html {
 
 .contact-left {
   width: 35%;
-  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(images/contact-bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(images/contact-bg.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -489,7 +490,7 @@ html {
 }
 
 .contact-heading {
-  font-family: 'Baloo Da 2', serif;
+  font-family: "Baloo Da 2", serif;
   font-size: 6rem;
   font-weight: 300;
   color: #272727;
@@ -511,11 +512,11 @@ html {
 .field {
   width: 45rem;
   background-color: transparent;
-  border:none;
-  border-bottom: .2rem dashed #636363;
+  border: none;
+  border-bottom: 0.2rem dashed #636363;
   margin: 3rem 0;
   padding: 1rem 1rem 1rem 0;
-  font-family: 'Mulish', serif;
+  font-family: "Mulish", serif;
   font-size: 1.6rem;
   color: #4b4b4b;
 }
@@ -536,7 +537,7 @@ html {
 .input-group label {
   position: absolute;
   left: 0;
-  font-family: 'Baloo Da 2', serif;
+  font-family: "Baloo Da 2", serif;
   font-size: 1.8rem;
   color: #4b4b4b;
   text-transform: uppercase;
@@ -564,13 +565,99 @@ html {
   color: #fff;
   border: none;
   margin-top: 2rem;
-  font-family: 'Mulish', serif;
+  font-family: "Mulish", serif;
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   cursor: pointer;
-  text-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.5);
-  box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.3);
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
 
+.footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: "Ballo Da 2", serif;
+  font-size: 1.6rem;
+  color: #a7a7a7;
+}
+
+.social-list a {
+  margin: 0 2rem;
+}
+
+.social-list i {
+  font-size: 2rem;
+  color: #a7a7a7;
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #e2b646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 0 0.1rem 0.6rem rgba(0,0,0,0.2);
+  border-radius: 0.3rem;
+}
+
+
+@media(max-width: 1500px) {
+  .about-us-img-wrapper {
+    grid-row: 3 / -1;
+  }
+
+  .card {
+    width: 34rem;
+  }
+
+  .contact-wrapper {
+    width: 80%;
+    height: 65rem;
+  }
+
+  .footer-content {
+    width: 80%;
+  }
+}
+
+@media(max-width: 1400px) {
+  .banner h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .banner p {
+    font-size: 3rem;
+  }
+
+  .banner button {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem; 
+  }
+
+  .menu-link {
+    font-size: 3rem;
+  }
 }
